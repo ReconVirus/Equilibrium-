@@ -33,6 +33,144 @@ svg * {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
+.mod-root .workspace-split.mod-horizontal > div:not(:first-of-type) {
+	background-color: var(--background-primary);
+  }
+  .mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+	background-color: var(--background-secondary-alt);
+  }
+  
+  .is-translucent:not(.is-fullscreen) .mod-root .workspace-split.mod-horizontal > div:not(:first-of-type) {
+	border-top: 1px solid var(--divider-color);
+	background-color: var(--divider-color) !important;
+  }
+  .is-translucent:not(.is-fullscreen) .mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+	background-color: var(--divider-color);
+	--divider-color: transparent ;
+  }
+  
+  .workspace-leaf-resize-handle {
+	background-color: transparent;
+	border: none !important;
+	overflow: visible;
+  }
+  
+  .workspace-leaf-resize-handle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent !important;
+	min-width: 8px;
+	min-height: 8px;
+  }
+  
+  .workspace-leaf-resize-handle::after {
+	content: "";
+	position: absolute;
+	border-radius: 3px;
+	width: 50%;
+	height: 50%;
+	transition: background-color 150ms ease-out;
+  }
+  
+  .workspace-leaf-resize-handle:hover::after {
+	background-color: var(--interactive-accent) !important;
+  }
+  
+  .markdown-source-view .markdown-embed,
+  .markdown-embed {
+	--border-color: var(--background-modifier-border);
+	border: none;
+	background-color: var(--background-secondary);
+	margin-bottom: 0.75rem;
+	border-radius: var(--corner-radius);
+	padding: 0;
+	overflow: hidden;
+  }
+  
+  .markdown-embed-title {
+	font-weight: var(--inline-title-weight);
+	font-size: 1.75em;
+	font-style: var(--inline-title-style);
+	font-variant: var(--inline-title-variant);
+	font-family: var(--inline-title-font);
+	letter-spacing: -0.015em;
+	padding: 0.25em 1rem;
+	color: var(--color-accent);
+	background-color: var(--background-secondary-alt);
+	white-space: break-spaces;
+  }
+  
+  .markdown-embed-link {
+	color: var(--text-muted);
+  }
+  
+  .markdown-embed-link:hover {
+	color: var(--text-normal);
+  }
+  
+  .markdown-embed-content.markdown-embed-page {
+	padding: 1rem;
+	padding-bottom: 0;
+	max-height: 50vh;
+	overflow: auto;
+  }
+  
+  .inline-title {
+	--inline-title-color: var(--color-accent);
+  }
+  
+  .is-translucent:not(.is-fullscreen) {
+	--divider-color: #bdbdbd3b;
+  }
+  .is-translucent:not(.is-fullscreen) .mod-right-split :not(.mod-top) .workspace-tab-header-container,
+  .is-translucent:not(.is-fullscreen) .mod-right-split .workspace-leaf {
+	background-color: var(--background-secondary);
+  }
+  .is-translucent:not(.is-fullscreen) .mod-left-split {
+	--background-secondary: #2a2a2abe;
+	--background-modifier-form-field: #262626be;
+	--background-modifier-border: #363636be;
+  }
+  .is-translucent:not(.is-fullscreen) .mod-left-split :not(.mod-top) .workspace-tab-header-container,
+  .is-translucent:not(.is-fullscreen) .mod-left-split .workspace-tab-container {
+	border-right: 1px solid var(--divider-color);
+  }
+  .is-translucent:not(.is-fullscreen) .workspace-split.mod-root .workspace-tab-header.is-active::before, .is-translucent:not(.is-fullscreen) .workspace-split.mod-root .workspace-tab-header.is-active::after {
+	--tab-outline-color: #bdbdbd15;
+	--tab-outline-width: 1px;
+  }
+  .is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left.is-collapsed {
+	border-right-color: var(--divider-color);
+  }
+  .is-translucent:not(.is-fullscreen) .workspace-tabs:not(.mod-top):not(.mod-root) .workspace-tab-header-container {
+	background-color: transparent;
+	border-bottom: none;
+	border-radius: 0;
+	margin: 0;
+	background-color: var(--divider-color);
+	border-right: none;
+  }
+  .is-translucent:not(.is-fullscreen) .workspace-split {
+	background-color: transparent;
+  }
+  
+  .is-translucent:not(.is-fullscreen) .titlebar, .is-translucent .app-container {
+	background-color: transparent !important;
+  }
+  .is-translucent:not(.is-fullscreen) .titlebar .workspace-split.mod-root, .is-translucent .app-container .workspace-split.mod-root {
+	background-color: transparent !important;
+  }
+  
+  .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+	background-color: transparent !important;
+  }
+  
+  .view-header {
+	margin: 0;
+	padding: 0 var(--size-4-3);
+  }
+
 .theme-dark.pt-color-scheme-raven-dt {
 	--grey100: hsl(0 0% 24%);
 	--grey200: hsl(0 0% 42%);
