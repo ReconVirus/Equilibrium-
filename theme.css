@@ -32,3 +32,60 @@ svg * {
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
+
+.theme-dark.pt-color-scheme-raven-dt {
+	--grey100: hsl(0 0% 24%);
+	--grey200: hsl(0 0% 42%);
+	--grey300: hsl(0 0% 62%);
+	--red100: hsl(358 51% 27%);
+	--red200: hsl(359 36% 48%);
+	--red300: hsl(2 37% 67%);
+	--orange100: hsl(24 55% 23%);
+	--orange200: hsl(24 55% 40%);
+	--orange300: hsl(23 56% 61%);
+	--yellow100: hsl(46 48% 19%);
+	--yellow200: hsl(45 48% 33%);
+	--yellow300: hsl(45 47% 49%);
+	--green100: hsl(122 35% 20%);
+	--green200: hsl(121 31% 35%);
+	--green300: hsl(121 31% 54%);
+	--mint100: hsl(162 41% 19%);
+	--mint200: hsl(161 37% 34%);
+	--mint300: hsl(161 35% 51%);
+	--cyan100: hsl(196 47% 21%);
+	--cyan200: hsl(195 47% 36%);
+	--cyan300: hsl(195 47% 56%);
+	--blue100: hsl(232 44% 32%);
+	--blue200: hsl(229 27% 49%);
+	--blue300: hsl(226 29% 67%);
+	--purple100: hsl(263 45% 32%);
+	--purple200: hsl(259 24% 50%);
+	--purple300: hsl(256 25% 68%);
+	--pink100: hsl(330 43% 27%);
+	--pink200: hsl(332 31% 47%);
+	--pink300: hsl(333 30% 66%);
+	--color-grey-base-hsl: 0 0% 24%;
+	--color-red-base-hsl: 358 51% 27%;
+	--color-orange-base-hsl: 24 55% 23%;
+	--color-yellow-base-hsl: 46 48% 19%;
+	--color-green-base-hsl: 122 35% 20%;
+	--color-mint-base-hsl: 162 41% 19%;
+	--color-cyan-base-hsl: 196 47% 21%;
+	--color-blue-base-hsl: 232 44% 32%;
+	--color-purple-base-hsl: 263 45% 32%;
+	--color-pink-base-hsl: 330 43% 27%;
+	--text-normal: hsl(0 0% 80%);
+	--text-muted: hsl(0 0% 70%);
+	--text-faint: hsl(0 0% 50%);
+	--background-primary: hsl(0 0% 13%);
+	--background-primary-alt: hsl(0 0% 18%);
+	--background-secondary: hsl(0 0% 7%);
+	--background-secondary-blur: hsl(0 0% 7% / 80%);
+	--background-secondary-alt: hsl(0 0% 5%);
+	--shadow-s: hsl(0 0% 0% / 10%) 0 1px 2px 0;
+	--shadow-l:
+	  hsl(0 0% 0% / 5%) 0 1px 2px,
+	  hsl(0 0% 0% / 5%) 0 2px 4px,
+	  hsl(0 0% 0% / 5%) 0 4px 8px,
+	  hsl(0 0% 0% / 5%) 0 8px 16px;
+  }
