@@ -263,6 +263,15 @@ svg * {
   }
 
 .theme-dark.pt-color-scheme-raven-dt {
+	--color-base-00: #1e1e1e;
+	--color-base-20: #262626;
+	--color-base-25: #2a2a2a;
+	--color-base-30: #363636;
+	--color-base-35: #3F3F3F;
+	--color-base-40: #555;
+	--color-base-50: #666;
+	--color-base-70: #bababa;
+	--color-base-100: #dadada;
 	--grey100: hsl(0 0% 24%);
 	--grey200: hsl(0 0% 42%);
 	--grey300: hsl(0 0% 62%);
